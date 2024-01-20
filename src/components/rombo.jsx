@@ -1,5 +1,7 @@
+import { useTema } from "./context/TemaContext";
 function Rombo() {
-    return ( <div className="rombo"></div> );
+    const {temaColor} = useTema();
+    return ( <div className="rombo" style={{backgroundColor: temaColor}}></div> );
 }
 
 export default Rombo;
